@@ -1,0 +1,54 @@
+.toolbar-content {
+    background-color: #0515a8;
+}
+
+.button-menu {
+    margin-left: auto;
+    color: white;
+}
+
+mat-sidenav-container{
+    height: 100%;
+}
+
+mat-sidenav, mat-sidenav-content{
+    padding: 8px;
+}
+
+mat-sidenav{
+    background-color: #ededed;
+    width: 210px;
+}
+
+a {
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0515a8;
+}
+
+a{
+    position: relative;
+}
+  
+a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1.2px;
+      border-radius: 4px;
+      background-color: #18272F;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+}
+  
+a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
